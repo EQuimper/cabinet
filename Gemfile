@@ -19,7 +19,7 @@ gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'turbolinks', '~> 5.x'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
-gem 'devise', '~> 3.5', '>= 3.5.6'
+gem 'devise', github: 'twalpole/devise', branch: 'rails5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
