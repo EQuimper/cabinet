@@ -1,7 +1,8 @@
-%h1= @doc.title
-%p= time_ago_in_words(@doc.created_at) + ' ago'
-%p= @doc.content
+.wrapper_with_padding
+  #doc_show
+    %h1.title= @doc.title
+    %p= simple_format(@doc.content)
 
-= link_to 'Home', docs_path
-= link_to 'Edit', edit_doc_path(@doc)
-= link_to 'Delete', doc_path(@doc), method: :delete, data: {confirm: "Are you Sure?"}
+    .buttons
+      = link_to 'Edit', edit_doc_path(@doc), class: "button"
+      = link_to 'Delete', doc_path(@doc), method: :delete, data: {confirm: "Are you Sure?"}, class: "button"
